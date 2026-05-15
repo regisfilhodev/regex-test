@@ -35,15 +35,15 @@ export function ExamplesDrawer({ onSelect }: Props) {
           Exemplos
         </Button>
       </SheetTrigger>
-      <SheetContent className="sm:max-w-lg flex flex-col h-full">
+      <SheetContent className="sm:max-w-lg flex flex-col h-full min-w-lg">
         <SheetHeader>
           <SheetTitle>Exemplos prontos</SheetTitle>
           <SheetDescription>
             Selecione um exemplo para carregar automaticamente o padrão e texto de teste.
           </SheetDescription>
         </SheetHeader>
-        <ScrollArea className="h-[calc(100vh-140px)] mt-4">
-          <div className="flex flex-col gap-3 pb-6 pr-4">
+        <ScrollArea className="h-[calc(100vh-140px)]">
+          <div className="flex flex-col gap-3 p-4">
             {EXAMPLES.map((ex) => (
               <button
                 key={ex.label}
